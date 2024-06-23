@@ -1,0 +1,43 @@
+/* CSS for Row1 component */
+.row-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.dashboard-box {
+  display: grid;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.box-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.box-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.box-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.responsive-container {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .row-container {
+    grid-template-columns: 0.5fr;
+  }
+}
